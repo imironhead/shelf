@@ -1,0 +1,22 @@
+{
+  "title" : "iRonhead's Pencil Sketch",
+  "document_type" : "list",
+  "documents" : [
+    {
+      "document_type" : "image",
+      "title" : "Arya Stark",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0001.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Arya Stark",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0002.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    }
+  ]
+}

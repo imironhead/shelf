@@ -1,0 +1,20 @@
+{
+  "title" : "Color Pencil",
+  "document_type" : "list",
+  "documents" : [
+    {
+      "title" : "Colored Pencil Blending Methods",
+      "description" : "",
+      "state" : "finished",
+      "url" : "https://www.youtube.com/watch?v=ufgdg8bwexI",
+      "tags" : ["drawing", "color-pencil"]
+    },
+    {
+      "title" : "How to Blend Colored Pencil with Solvents",
+      "description" : "",
+      "state" : "finished",
+      "url" : "https://www.youtube.com/watch?v=enldHbSFfVs",
+      "tags" : ["drawing", "color-pencil"]
+    }
+  ]
+}
