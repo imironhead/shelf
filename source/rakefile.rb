@@ -2,81 +2,6 @@ require 'fileutils'
 require 'json'
 require 'uri'
 
-# $DIR_SOURCE = 'source'
-# $DIR_TARGET = 'data'
-# $PATH_SOURCE = "../#{$DIR_SOURCE}/"
-# $PATH_TARGET = "../#{$DIR_TARGET}/"
-#
-# desc 'build'
-# task :build_2 do build end
-#
-# desc 'run a local server in http://localhost:8000/'
-# task :s do
-#   `ruby -run -e httpd ../ -p 8000`
-# end
-#
-# def build
-#   clean
-#   copy_categories
-#   generate sources
-# end
-#
-# def clean
-#   Dir.glob "#{$PATH_TARGET}*.json" do | data |
-#     File.delete data
-#   end
-# end
-#
-# def copy_categories
-#   Dir.glob("#{$PATH_SOURCE}*.json") do | file |
-#     new_file = $PATH_TARGET + File.basename(file)
-#
-#     FileUtils.cp(file, new_file)
-#   end
-# end
-#
-# def generate data
-#   generate_index data
-# end
-#
-# def generate_index data
-#   categories = data.map do | category |
-#     {
-#       title: category[:title],
-#       count: category[:documents].length,
-#       url: category[:url]
-#     }
-#   end
-#
-#   index = {
-#     title: "iRonhead's Reading List",
-#     category: 'index',
-#     categories: categories
-#   }
-#
-#   path = $PATH_TARGET + "index.json"
-#
-#   File.open(path, 'w') { |f| f << index.to_json }
-# end
-#
-# def sources
-#   Dir.glob("#{$PATH_SOURCE}*.json").map do | file |
-#     json = IO.read(file)
-#
-#     data = JSON.parse(json, symbolize_names: true)
-#
-#     data[:url] = "../#{$DIR_TARGET}/#{File.basename file}"
-#
-#     data
-#   end
-# end
-#
-# task :test do
-#   ENV['qoo'] = 'foo'
-#   puts ENV['qoo']
-#   puts ENV['zoo']
-# end
-
 desc 'run a local server in http://localhost:4000/'
 task :s do
   `ruby -run -e httpd ../ -p 4000`
@@ -99,6 +24,7 @@ def task_build
   clear_data_folder
   pages = load_pages
 
+  process_youtube pages
   generate_pages pages
   generate_index_page pages
 end
@@ -125,6 +51,15 @@ def add_image_carousel(pages)
   pages.map do |page|
     next unless page[:documents].all? { |doc| doc[:page_type] == 'image' }
     # insert carousel
+  end
+end
+
+def process_youtube(pages)
+  pages.each do |page|
+    page[:documents].each do |document|
+      next if document[:document_type] != 'youtube'
+      document[:embed_url] = document[:url].gsub('watch?v=', 'embed/')
+    end
   end
 end
 

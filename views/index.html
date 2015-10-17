@@ -44,7 +44,7 @@
         $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
       });
 
-      app.controller('list', function($scope, $http, $window) {
+      app.controller('list', function($scope, $http, $window, $sce) {
         $http.get('../data/index.json')
         .success(function(data) {
           $scope.data = data;
@@ -64,6 +64,9 @@
               $scope.data = data;
             });
           } else if (doc.document_type == 'image') {
+            $scope.data = doc;
+          } else if (doc.document_type == 'youtube') {
+            doc.trust_embed_url = $sce.trustAsResourceUrl(doc.embed_url);
             $scope.data = doc;
           } else {
             $window.location.href = doc.url;
@@ -127,6 +130,12 @@
 
           <div ng-if="data.document_type == 'image'" class="col-lg-12">
             <img ng-src="{{ data.url }}" class="img-responsive"/>
+          </div>
+
+          <div ng-if="data.document_type == 'youtube'" class="col-lg-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" ng-src="{{ data.trust_embed_url }}" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
