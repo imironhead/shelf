@@ -1,0 +1,26 @@
+{
+  "title": "Python",
+  "document_type": "list",
+  "documents": [
+    {
+      "title": "Python Idioms",
+      "description": "",
+      "state": "finished",
+      "url": "http://seanlin.logdown.com/posts/239883-python-idioms",
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "title": "Python 2: Unicode How To",
+      "description": "",
+      "state": "finished",
+      "url": "https://docs.python.org/2/howto/unicode.html",
+      "tags": [
+        "python",
+        "unicode"
+      ]
+    }
+  ],
+  "url": "../data/python.json"
+}

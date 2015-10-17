@@ -17,6 +17,70 @@
       "state" : "finished",
       "url" : "../static/images/pencil-sketch-0002.jpg",
       "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Doggy",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0003.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Girl Face",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0009.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Girl Face - 2",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0004.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Girl Face - 3",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0008.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Girl Face - 4",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0010.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Practice - Mouth",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0005.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Practice - Mouth - 2",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0006.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Tom Cruise",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/pencil-sketch-0007.jpg",
+      "tags" : ["sketch", "pencil-sketch"]
     }
   ]
 }

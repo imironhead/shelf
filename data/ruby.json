@@ -1,0 +1,16 @@
+{
+  "title": "Ruby",
+  "document_type": "list",
+  "documents": [
+    {
+      "title": "Ruby Style Guide",
+      "description": "",
+      "state": "finished",
+      "url": "https://github.com/bbatsov/ruby-style-guide",
+      "tags": [
+        "ruby"
+      ]
+    }
+  ],
+  "url": "../data/ruby.json"
+}

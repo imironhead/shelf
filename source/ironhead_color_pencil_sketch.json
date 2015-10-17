@@ -1,0 +1,54 @@
+{
+  "title" : "iRonhead's Color Pencil Sketch",
+  "document_type" : "list",
+  "documents" : [
+    {
+      "document_type" : "image",
+      "title" : "Girl",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0004.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Jananese Girl",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0006.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Shiba",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0001.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Shiba",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0002.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Guenhwyvar",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0003.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    },
+    {
+      "document_type" : "image",
+      "title" : "Practice",
+      "description" : "",
+      "state" : "finished",
+      "url" : "../static/images/color-pencil-sketch-0005.jpg",
+      "tags" : ["sketch", "color-pencil-sketch"]
+    }
+  ]
+}
