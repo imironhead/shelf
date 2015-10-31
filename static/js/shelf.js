@@ -162,4 +162,4 @@ var Container = React.createClass({
 });
 
 ReactDOM.render(<Header />, document.getElementById('navbar'));
-ReactDOM.render(<Container url="/target/shelves/shelves_0.json" />, document.getElementById('shelf'));
+ReactDOM.render(<Container url="./target/shelves/shelves_0.json" />, document.getElementById('shelf'));
