@@ -18,10 +18,6 @@ var Header = React.createClass({
 });
 
 var PageHeader = React.createClass({
-  handleClick: function(doc) {
-    this.props.container.loadDocument(doc.parent_url);
-  },
-
   render: function() {
     var BButton = ReactBootstrap.Button;
     var BPageHeader = ReactBootstrap.PageHeader;
@@ -33,7 +29,13 @@ var PageHeader = React.createClass({
         {
           (() => {
             if (this.props.doc.parent_url) {
-              return (<BButton bsStyle="link" className="pull-right" onClick={ this.handleClick.bind(this, this.props.doc) }>Back</BButton>)
+              return (
+                <BButton bsStyle="link"
+                         className="pull-right"
+                         onClick={ this.props.container.handleUrl(this.props.doc.parent_url) }>
+                  Back
+                </BButton>
+              )
             }
           })()
         }
@@ -72,10 +74,6 @@ var Image = React.createClass({
 });
 
 var Shelf = React.createClass({
-  handleClick: function(doc) {
-    this.props.container.loadDocument(doc.url);
-  },
-
   render: function() {
     var Table = ReactBootstrap.Table;
 
@@ -89,7 +87,7 @@ var Shelf = React.createClass({
           <tbody>{
             this.props.doc.documents.map(function(doc, index) {
               return (
-                <tr key={ index } onClick={ this.handleClick.bind(this, doc) } >
+                <tr key={ index } onClick={ this.props.container.handleUrl(doc.url) } >
                   <td>{ doc.name }</td>
                   <td>{ doc.document_type }</td>
                 </tr>
@@ -121,6 +119,12 @@ var Youtube = React.createClass({
 });
 
 var Container = React.createClass({
+  handleUrl: function(url) {
+    return function(url_) {
+      this.loadDocument(url_);
+    }.bind(this, url);
+  },
+
   loadDocument: function(url) {
     $.ajax({
       url: url,
