@@ -63,7 +63,7 @@ var Shelf = React.createClass({
         <PageHeader>{this.props.doc.name}</PageHeader>
         <Table striped bordered hover>
           <thead>
-            <tr><th>Title</th><th>Type</th></tr>
+            <tr><th className="col-lg-10">Title</th><th className="col-lg-2">Type</th></tr>
           </thead>
           <tbody>{
             this.props.doc.documents.map(function(doc, index) {
