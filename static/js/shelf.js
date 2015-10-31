@@ -41,8 +41,9 @@ var Image = React.createClass({
 
     return (
       <div>
-        <PageHeader>{this.props.doc.name}</PageHeader>
+        <PageHeader>{ this.props.doc.name }</PageHeader>
         <BImage src={ this.props.doc.url } responsive />
+        <div><p>{ this.props.doc.description }</p></div>
       </div>
     );
   }
