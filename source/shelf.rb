@@ -85,7 +85,7 @@ class Shelf
     FileUtils.mkdir_p shelf_path unless File.directory?(shelf_path)
 
     # TODO: paginate
-    parent_url = File.join env.target_shelves_path, 'shelves_0.json'
+    parent_url = File.join env.target_shelves_url, 'shelves_0.json'
 
     docs = documents.map { |doc| doc.to_brief_hash shelf_url }
 
