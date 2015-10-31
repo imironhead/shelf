@@ -7,6 +7,6 @@
     "programming",
     "python"
   ],
-  "parent_url": "/target/shelves/programming_python/shelf_0.json",
+  "parent_url": "./target/shelves/programming_python/shelf_0.json",
   "url": "http://seanlin.logdown.com/posts/239883-python-idioms"
 }

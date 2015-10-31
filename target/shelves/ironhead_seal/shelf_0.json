@@ -7,12 +7,12 @@
     {
       "name": "聽雨",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_seal/doc_000.json"
+      "url": "./target/shelves/ironhead_seal/doc_000.json"
     },
     {
       "name": "琴瑟",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_seal/doc_001.json"
+      "url": "./target/shelves/ironhead_seal/doc_001.json"
     }
   ]
 }

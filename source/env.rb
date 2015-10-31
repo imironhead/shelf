@@ -12,7 +12,7 @@ class Env
   end
 
   def initialize
-    @root_url = ''
+    @root_url = '.'
     @root_path = '..'
     @source_name = 'source'
     @target_name = 'target'

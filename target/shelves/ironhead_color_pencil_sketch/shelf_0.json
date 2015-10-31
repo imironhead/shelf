@@ -7,32 +7,32 @@
     {
       "name": "Girl",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_girl_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_girl_000.json"
     },
     {
       "name": "Guenhwyvar",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_guenhwyvar_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_guenhwyvar_000.json"
     },
     {
       "name": "Japanese Girl",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_japanese_girl_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_japanese_girl_000.json"
     },
     {
       "name": "Practice",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_practice_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_000.json"
     },
     {
       "name": "Shiba",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_shiba_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_shiba_000.json"
     },
     {
       "name": "Shiba",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/doc_shiba_001.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_shiba_001.json"
     }
   ]
 }

@@ -7,7 +7,7 @@
     {
       "name": "Ruby Style Guide",
       "document_type": "link",
-      "url": "/target/shelves/programming_ruby/doc_style_guide.json"
+      "url": "./target/shelves/programming_ruby/doc_style_guide.json"
     }
   ]
 }

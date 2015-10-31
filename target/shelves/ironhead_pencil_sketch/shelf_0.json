@@ -7,52 +7,52 @@
     {
       "name": "Arya Stark",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_arya_stark_000.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_arya_stark_000.json"
     },
     {
       "name": "Arya Stark",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_arya_stark_001.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_arya_stark_001.json"
     },
     {
       "name": "Doggy",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_doggy_000.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_doggy_000.json"
     },
     {
       "name": "Girl Face",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_girl_face_000.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_girl_face_000.json"
     },
     {
       "name": "Girl Face",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_girl_face_001.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_girl_face_001.json"
     },
     {
       "name": "Girl Face",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_girl_face_002.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_girl_face_002.json"
     },
     {
       "name": "Girl Face",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_girl_face_003.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_girl_face_003.json"
     },
     {
       "name": "Tom Cruise",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_people_tom_cruise_000.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_people_tom_cruise_000.json"
     },
     {
       "name": "Practice - Mouth",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_practice_mouth_000.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_practice_mouth_000.json"
     },
     {
       "name": "Practice - Mouth",
       "document_type": "image",
-      "url": "/target/shelves/ironhead_pencil_sketch/doc_practice_mouth_001.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/doc_practice_mouth_001.json"
     }
   ]
 }

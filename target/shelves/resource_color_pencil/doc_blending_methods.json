@@ -7,6 +7,6 @@
     "drawing",
     "color-pencil"
   ],
-  "parent_url": "/target/shelves/resource_color_pencil/shelf_0.json",
+  "parent_url": "./target/shelves/resource_color_pencil/shelf_0.json",
   "url": "https://www.youtube.com/embed/ufgdg8bwexI"
 }

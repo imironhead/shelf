@@ -6,37 +6,37 @@
     {
       "name": "iRonhead's Color Pencil Sketch",
       "document_type": "shelf",
-      "url": "/target/shelves/ironhead_color_pencil_sketch/shelf_0.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/shelf_0.json"
     },
     {
       "name": "iRonhead's Pencil Sketch",
       "document_type": "shelf",
-      "url": "/target/shelves/ironhead_pencil_sketch/shelf_0.json"
+      "url": "./target/shelves/ironhead_pencil_sketch/shelf_0.json"
     },
     {
       "name": "iRonhead's Seal",
       "document_type": "shelf",
-      "url": "/target/shelves/ironhead_seal/shelf_0.json"
+      "url": "./target/shelves/ironhead_seal/shelf_0.json"
     },
     {
       "name": "C/C++",
       "document_type": "shelf",
-      "url": "/target/shelves/programming_cpp/shelf_0.json"
+      "url": "./target/shelves/programming_cpp/shelf_0.json"
     },
     {
       "name": "Python",
       "document_type": "shelf",
-      "url": "/target/shelves/programming_python/shelf_0.json"
+      "url": "./target/shelves/programming_python/shelf_0.json"
     },
     {
       "name": "Ruby",
       "document_type": "shelf",
-      "url": "/target/shelves/programming_ruby/shelf_0.json"
+      "url": "./target/shelves/programming_ruby/shelf_0.json"
     },
     {
       "name": "Color Pencil",
       "document_type": "shelf",
-      "url": "/target/shelves/resource_color_pencil/shelf_0.json"
+      "url": "./target/shelves/resource_color_pencil/shelf_0.json"
     }
   ]
 }

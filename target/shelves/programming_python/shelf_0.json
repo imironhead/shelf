@@ -7,12 +7,12 @@
     {
       "name": "Python Idioms",
       "document_type": "link",
-      "url": "/target/shelves/programming_python/doc_python_idioms.json"
+      "url": "./target/shelves/programming_python/doc_python_idioms.json"
     },
     {
       "name": "Python 2: Unicode How To",
       "document_type": "link",
-      "url": "/target/shelves/programming_python/doc_unicode_how_to.json"
+      "url": "./target/shelves/programming_python/doc_unicode_how_to.json"
     }
   ]
 }

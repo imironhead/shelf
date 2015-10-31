@@ -7,12 +7,12 @@
     {
       "name": "Colored Pencil Blending Methods",
       "document_type": "youtube",
-      "url": "/target/shelves/resource_color_pencil/doc_blending_methods.json"
+      "url": "./target/shelves/resource_color_pencil/doc_blending_methods.json"
     },
     {
       "name": "How to Blend Colored Pencil with Solvents",
       "document_type": "youtube",
-      "url": "/target/shelves/resource_color_pencil/doc_blending_with_solvents.json"
+      "url": "./target/shelves/resource_color_pencil/doc_blending_with_solvents.json"
     }
   ]
 }

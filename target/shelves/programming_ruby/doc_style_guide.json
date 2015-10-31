@@ -7,6 +7,6 @@
     "programming",
     "ruby"
   ],
-  "parent_url": "/target/shelves/programming_ruby/shelf_0.json",
+  "parent_url": "./target/shelves/programming_ruby/shelf_0.json",
   "url": "https://github.com/bbatsov/ruby-style-guide"
 }
