@@ -7,5 +7,5 @@
     "seal"
   ],
   "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
-  "url": "../../static/images/seal-000-00.jpg"
+  "url": "./static/images/seal-000-00.jpg"
 }
