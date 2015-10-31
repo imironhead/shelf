@@ -61,12 +61,32 @@ var DummyDocument = React.createClass({
 
 var Image = React.createClass({
   render: function() {
+    var BCarousel = ReactBootstrap.Carousel;
+    var BCarouselItem = ReactBootstrap.CarouselItem;
     var BImage = ReactBootstrap.Image;
 
     return (
       <div>
         <PageHeader doc={ this.props.doc } container={ this.props.container } />
-        <BImage src={ this.props.doc.url } responsive />
+        {
+          (() => {
+            if (this.props.doc.urls) {
+              return (
+                <BCarousel>
+                  { this.props.doc.urls.map(function(url, index) {
+                    return (
+                      <BCarouselItem key={ index }>
+                        <img className="center-block" src={ url } />
+                      </BCarouselItem>
+                    );
+                  }) }
+                </BCarousel>
+              )
+            } else {
+              return (<BImage src={ this.props.doc.url } responsive />);
+            }
+          })()
+        }
         <div><p>{ this.props.doc.description }</p></div>
       </div>
     );
