@@ -1,4 +1,6 @@
 require 'yaml'
+require_relative './image_document'
+require_relative './link_document'
 require_relative './youtube_document'
 
 # Shelf
@@ -9,11 +11,30 @@ class Shelf
   attr_reader :document_name
 
   def self.create_shelves(env)
-    Dir.glob(File.join(env.source_shelfs_path, '*'))
-      .select { |folder| File.directory? folder }
-      .map { |folder| Shelf.new folder }
-      .reject { |shelf| shelf.documents.empty? }
-      .each { |s| s.save env }
+    shelves = Dir.glob(File.join(env.source_shelves_path, '*'))
+              .select { |folder| File.directory? folder }
+              .map { |folder| Shelf.new folder }
+              .reject { |shelf| shelf.documents.empty? }
+
+    shelves.each { |shelf| shelf.save env }
+
+    Shelf.save_shelves_index_as_json shelves, env
+  end
+
+  def self.save_shelves_index_as_json(shelves, env)
+    index = { name: 'shelves', document_type: 'shelf', description: '.' }
+
+    index[:documents] = shelves.map do |shelf|
+      url = File.join(env.target_shelves_url,
+                      shelf.document_name,
+                      'shelf_0.json')
+
+      { name: shelf.name, document_type: 'shelf', url: url }
+    end
+
+    path = File.join(env.target_shelves_path, 'shelves_0.json')
+
+    File.open(path, 'w') { |f| f << JSON.pretty_generate(index) }
   end
 
   def initialize(path)
@@ -42,14 +63,18 @@ class Shelf
     document_name = File.basename(yaml_path, File.extname(yaml_path))
 
     case doc['document_type']
+    when 'image'
+      ImageDocument.new doc, document_name
+    when 'link'
+      LinkDocument.new doc, document_name
     when 'youtube'
       YoutubeDocument.new doc, document_name
     end
   end
 
   def save(env)
-    shelf_path = File.join env.target_shelfs_path, document_name
-    shelf_url = File.join env.target_shelfs_url, document_name
+    shelf_path = File.join env.target_shelves_path, document_name
+    shelf_url = File.join env.target_shelves_url, document_name
 
     save_index_as_json shelf_path, shelf_url
 

@@ -1,0 +1,12 @@
+{
+  "name": "Ruby",
+  "document_type": "shelf",
+  "description": "Ruby programming resources.",
+  "documents": [
+    {
+      "name": "Ruby Style Guide",
+      "document_type": "link",
+      "url": "/target/shelves/programming_ruby/doc_style_guide.json"
+    }
+  ]
+}

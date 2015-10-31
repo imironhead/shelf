@@ -34,6 +34,20 @@ var DummyDocument = React.createClass({
   }
 });
 
+var Image = React.createClass({
+  render: function() {
+    var PageHeader = ReactBootstrap.PageHeader;
+    var BImage = ReactBootstrap.Image;
+
+    return (
+      <div>
+        <PageHeader>{this.props.doc.name}</PageHeader>
+        <BImage src={ this.props.doc.url } responsive />
+      </div>
+    );
+  }
+});
+
 var Shelf = React.createClass({
   handleClick: function(doc) {
     this.props.container.loadDocument(doc.url);
@@ -110,6 +124,8 @@ var Container = React.createClass({
 
   render: function() {
     switch (this.state.doc.document_type) {
+      case "image":
+        return (<Image doc={ this.state.doc } />);
       case "shelf":
         return (<Shelf doc={ this.state.doc } container={ this } />);
       case "youtube":
@@ -121,4 +137,4 @@ var Container = React.createClass({
 });
 
 ReactDOM.render(<Header />, document.getElementById('navbar'));
-ReactDOM.render(<Container url="/target/shelfs/resource_color_pencil/shelf_0.json" />, document.getElementById('shelf'));
+ReactDOM.render(<Container url="/target/shelves/shelves_0.json" />, document.getElementById('shelf'));

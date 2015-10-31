@@ -1,0 +1,22 @@
+{
+  "name": "C/C++",
+  "document_type": "shelf",
+  "description": "C/C++ programming resources.",
+  "documents": [
+    {
+      "name": "C++ Core Guidelines",
+      "document_type": "link",
+      "url": "/target/shelves/programming_cpp/doc_core_guidelines.json"
+    },
+    {
+      "name": "C++11 - the new ISO C++ standard",
+      "document_type": "link",
+      "url": "/target/shelves/programming_cpp/doc_cpp11_the_new_iso_cpp_standard.json"
+    },
+    {
+      "name": "Google C++ Style Guide",
+      "document_type": "link",
+      "url": "/target/shelves/programming_cpp/doc_google_cpp_style_guide.json"
+    }
+  ]
+}
