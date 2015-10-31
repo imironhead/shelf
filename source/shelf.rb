@@ -22,7 +22,7 @@ class Shelf
   end
 
   def self.save_shelves_index_as_json(shelves, env)
-    index = { name: 'shelves', document_type: 'shelf', description: '.' }
+    index = { name: 'Shelves', document_type: 'shelf', description: '.' }
 
     index[:documents] = shelves.map do |shelf|
       url = File.join(env.target_shelves_url,
