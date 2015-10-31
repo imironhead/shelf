@@ -1,6 +1,7 @@
 {
   "name": "Color Pencil",
   "document_type": "shelf",
+  "parent_url": "../target/shelves/shelves_0.json",
   "description": "Color pencil learning resources.",
   "documents": [
     {
