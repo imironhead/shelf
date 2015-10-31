@@ -17,13 +17,36 @@ var Header = React.createClass({
   }
 });
 
-var DummyDocument = React.createClass({
+var PageHeader = React.createClass({
+  handleClick: function(doc) {
+    this.props.container.loadDocument(doc.parent_url);
+  },
+
   render: function() {
-    var PageHeader = ReactBootstrap.PageHeader;
+    var BButton = ReactBootstrap.Button;
+    var BPageHeader = ReactBootstrap.PageHeader;
+    var BImage = ReactBootstrap.Image;
 
     return (
+      <BPageHeader>
+        { this.props.doc.name }
+        {
+          (() => {
+            if (this.props.doc.parent_url) {
+              return (<BButton bsStyle="link" className="pull-right" onClick={ this.handleClick.bind(this, this.props.doc) }>Back</BButton>)
+            }
+          })()
+        }
+      </BPageHeader>
+    )
+  }
+});
+
+var DummyDocument = React.createClass({
+  render: function() {
+    return (
       <div>
-        <PageHeader>{this.props.doc.name}</PageHeader>
+        <PageHeader doc={ this.props.doc } container={ this.props.container } />
         <div>
           Document type <strong>{
             this.props.doc.document_type
@@ -36,12 +59,11 @@ var DummyDocument = React.createClass({
 
 var Image = React.createClass({
   render: function() {
-    var PageHeader = ReactBootstrap.PageHeader;
     var BImage = ReactBootstrap.Image;
 
     return (
       <div>
-        <PageHeader>{ this.props.doc.name }</PageHeader>
+        <PageHeader doc={ this.props.doc } container={ this.props.container } />
         <BImage src={ this.props.doc.url } responsive />
         <div><p>{ this.props.doc.description }</p></div>
       </div>
@@ -55,12 +77,11 @@ var Shelf = React.createClass({
   },
 
   render: function() {
-    var PageHeader = ReactBootstrap.PageHeader;
     var Table = ReactBootstrap.Table;
 
     return (
       <div>
-        <PageHeader>{this.props.doc.name}</PageHeader>
+        <PageHeader doc={ this.props.doc } container={ this.props.container } />
         <Table striped bordered hover>
           <thead>
             <tr><th className="col-lg-10">Title</th><th className="col-lg-2">Type</th></tr>
@@ -84,14 +105,13 @@ var Shelf = React.createClass({
 
 var Youtube = React.createClass({
   render: function() {
-    var PageHeader = ReactBootstrap.PageHeader;
     var ResponsiveEmbed = ReactBootstrap.ResponsiveEmbed;
 
     // FIXME: iframe bug, check console.
 
     return (
       <div>
-        <PageHeader>{this.props.doc.name}</PageHeader>
+        <PageHeader doc={ this.props.doc } container={ this.props.container } />
         <ResponsiveEmbed a16by9>
           <iframe src={ this.props.doc.url } allowFullScreen></iframe>
         </ResponsiveEmbed>
@@ -126,13 +146,13 @@ var Container = React.createClass({
   render: function() {
     switch (this.state.doc.document_type) {
       case "image":
-        return (<Image doc={ this.state.doc } />);
+        return (<Image doc={ this.state.doc } container={ this } />);
       case "shelf":
         return (<Shelf doc={ this.state.doc } container={ this } />);
       case "youtube":
-        return (<Youtube doc={ this.state.doc } />);
+        return (<Youtube doc={ this.state.doc } container={ this } />);
       default:
-        return (<DummyDocument doc={ this.state.doc } />);
+        return (<DummyDocument doc={ this.state.doc } container={ this } />);
     }
   }
 });

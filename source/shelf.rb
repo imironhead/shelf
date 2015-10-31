@@ -76,24 +76,23 @@ class Shelf
     shelf_path = File.join env.target_shelves_path, document_name
     shelf_url = File.join env.target_shelves_url, document_name
 
-    save_index_as_json shelf_path, shelf_url
+    save_index_as_json env, shelf_path, shelf_url
 
-    documents.each { |doc| doc.save_as_json shelf_path }
+    documents.each { |doc| doc.save_as_json shelf_path, shelf_url }
   end
 
-  def save_index_as_json(shelf_path, shelf_url)
+  def save_index_as_json(env, shelf_path, shelf_url)
     FileUtils.mkdir_p shelf_path unless File.directory?(shelf_path)
 
     # TODO: paginate
-    path = File.join shelf_path, 'shelf_0.json'
+    parent_url = File.join env.target_shelves_path, 'shelves_0.json'
 
-    docs = documents.map do |doc|
-      { name: doc.name, document_type: doc.document_type,
-        url: File.join(shelf_url, "#{doc.document_name}.json") }
-    end
+    docs = documents.map { |doc| doc.to_brief_hash shelf_url }
 
-    shelf = { name: name, document_type: 'shelf',
+    shelf = { name: name, document_type: 'shelf', parent_url: parent_url,
               description: description, documents: docs }
+
+    path = File.join shelf_path, 'shelf_0.json'
 
     File.open(path, 'w') { |f| f << JSON.pretty_generate(shelf) }
   end

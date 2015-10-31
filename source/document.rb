@@ -17,11 +17,18 @@ class Document
     @document_name = document_name
   end
 
-  def save_as_json(_)
+  def save_as_json(_, _)
   end
 
-  def to_hash
+  def to_detail_hash(shelf_url)
+    parent_url = File.join shelf_url, 'shelf_0.json'
+
     { name: name, document_type: document_type, state: state,
-      description: description, tags: tags }
+      description: description, tags: tags, parent_url: parent_url }
+  end
+
+  def to_brief_hash(shelf_url)
+    { name: name, document_type: document_type,
+      url: File.join(shelf_url, "#{document_name}.json") }
   end
 end
