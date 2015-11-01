@@ -1,0 +1,14 @@
+{
+  "name": "不願役時",
+  "document_type": "image",
+  "state": "finished",
+  "description": "2.5 cm x 2.4 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-003-00.jpg",
+    "./static/images/seal-003-01.jpg"
+  ]
+}

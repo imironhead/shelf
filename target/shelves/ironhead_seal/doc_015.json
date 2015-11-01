@@ -1,0 +1,14 @@
+{
+  "name": "小樓一夜聽春雨",
+  "document_type": "image",
+  "state": "finished",
+  "description": "2.9 cm x 2.9 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-015-00.jpg",
+    "./static/images/seal-015-01.jpg"
+  ]
+}

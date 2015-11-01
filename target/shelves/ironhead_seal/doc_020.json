@@ -1,0 +1,11 @@
+{
+  "name": "平安",
+  "document_type": "image",
+  "state": "finished",
+  "description": "eric",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "url": "./static/images/seal-020-00.jpg"
+}

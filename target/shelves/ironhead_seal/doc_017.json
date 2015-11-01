@@ -1,0 +1,14 @@
+{
+  "name": "貓掌",
+  "document_type": "image",
+  "state": "finished",
+  "description": "ricca, 1.7 cm x 1.7 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-017-00.jpg",
+    "./static/images/seal-017-01.jpg"
+  ]
+}

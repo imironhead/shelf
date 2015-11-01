@@ -1,0 +1,11 @@
+{
+  "name": "幽谷",
+  "document_type": "image",
+  "state": "finished",
+  "description": "1.9 cm x 0.7 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "url": "./static/images/seal-005-00.jpg"
+}

@@ -5,34 +5,89 @@
   "description": "iRonhead's Color Pencil Sketch.",
   "documents": [
     {
-      "name": "Girl",
-      "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_girl_000.json"
-    },
-    {
       "name": "Guenhwyvar",
       "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_guenhwyvar_000.json"
-    },
-    {
-      "name": "Japanese Girl",
-      "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_japanese_girl_000.json"
-    },
-    {
-      "name": "Practice",
-      "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_cat_guenhwyvar_000.json"
     },
     {
       "name": "Shiba",
       "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_shiba_000.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_dog_shiba_000.json"
     },
     {
       "name": "Shiba",
       "document_type": "image",
-      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_shiba_001.json"
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_dog_shiba_001.json"
+    },
+    {
+      "name": "Female Face - Eva Green",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_female_face_eva_green_000.json"
+    },
+    {
+      "name": "Female Face - Eva Green",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_female_face_eva_green_001.json"
+    },
+    {
+      "name": "Female Figure",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_female_figure_000.json"
+    },
+    {
+      "name": "Female Figure - Eva Green",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_female_figure_eva_green_000.json"
+    },
+    {
+      "name": "Female Figure - Japanese Female",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_female_figure_japanese_000.json"
+    },
+    {
+      "name": "Male Figure",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_male_figure_000.json"
+    },
+    {
+      "name": "Practice - Ear",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_ear_000.json"
+    },
+    {
+      "name": "Practice - Female Face",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_female_face_000.json"
+    },
+    {
+      "name": "Practice - Female Face",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_female_face_001.json"
+    },
+    {
+      "name": "Practice - Female Face",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_female_face_002.json"
+    },
+    {
+      "name": "Practice - Female Face",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_practice_female_face_003.json"
+    },
+    {
+      "name": "Scene - Field and House",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_scene_000.json"
+    },
+    {
+      "name": "Scene - Lotus",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_scene_001.json"
+    },
+    {
+      "name": "Scene - Lake",
+      "document_type": "image",
+      "url": "./target/shelves/ironhead_color_pencil_sketch/doc_scene_002.json"
     }
   ]
 }

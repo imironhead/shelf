@@ -1,0 +1,14 @@
+{
+  "name": "賞心樂事",
+  "document_type": "image",
+  "state": "finished",
+  "description": "wesley, 2.1 cm x 2.1 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-018-00.jpg",
+    "./static/images/seal-018-01.jpg"
+  ]
+}

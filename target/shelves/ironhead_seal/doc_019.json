@@ -1,0 +1,14 @@
+{
+  "name": "黃葉地",
+  "document_type": "image",
+  "state": "finished",
+  "description": "筠珺，2.4 cm x 2.4 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-019-00.jpg",
+    "./static/images/seal-019-01.jpg"
+  ]
+}

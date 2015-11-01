@@ -1,0 +1,15 @@
+{
+  "name": "劉氏、淑均、自在",
+  "document_type": "image",
+  "state": "finished",
+  "description": "ricca's mom, 2.4 cm x 2.4 cm, 2.0 cm x 1.4 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-016-00.jpg",
+    "./static/images/seal-016-01.jpg",
+    "./static/images/seal-016-02.jpg"
+  ]
+}

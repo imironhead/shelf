@@ -1,0 +1,14 @@
+{
+  "name": "熊熊印信",
+  "document_type": "image",
+  "state": "finished",
+  "description": "2.9 cm x 2.9 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-012-00.jpg",
+    "./static/images/seal-012-01.jpg"
+  ]
+}

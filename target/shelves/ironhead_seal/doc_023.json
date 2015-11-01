@@ -1,0 +1,11 @@
+{
+  "name": "閑適",
+  "document_type": "image",
+  "state": "finished",
+  "description": "ricca's mom",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "url": "./static/images/seal-023-00.jpg"
+}

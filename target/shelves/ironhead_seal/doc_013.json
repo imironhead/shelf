@@ -1,0 +1,14 @@
+{
+  "name": "雲君",
+  "document_type": "image",
+  "state": "finished",
+  "description": "1.9 cm x 1.0 cm",
+  "tags": [
+    "seal"
+  ],
+  "parent_url": "./target/shelves/ironhead_seal/shelf_0.json",
+  "urls": [
+    "./static/images/seal-013-00.jpg",
+    "./static/images/seal-013-01.jpg"
+  ]
+}
