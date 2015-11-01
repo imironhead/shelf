@@ -1,0 +1,7 @@
+---
+name: "鐵"
+document_type: image
+state: finished
+urls: [./static/images/seal-008-00.jpg, ./static/images/seal-008-01.jpg]
+tags: [seal]
+description: "1.4 cm x 1.4 cm"
